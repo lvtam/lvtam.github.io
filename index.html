@@ -47,11 +47,13 @@
     <style id='sydney-style-inline-css' type='text/css'>
         .slide-inner{
             display:none;
+            z-index: 99999;
+            
         }
         #banner{
             position: absolute;
             z-index: 9999;
-            width: 70%;
+            width: 80%;
             height: 80%;
             margin-left: auto;
             margin-right: auto;
@@ -60,36 +62,47 @@
             top: 100px;
         }
         .banner-wrapper{
-            position: relative;
+            padding: 40px 0px; 
+            overflow: hidden;
+        }
+        .banner-left{
+            width: 40% !important;
+            float:left;
+        }
+        .banner-right{
+            float: right;
+            width: 58% !important;
+            
         }
         .banner-image{
-            position: absolute;
-            bottom: 0px;
-            left:0px;
-            background: url('laptop.png') no-repeat;
-            background-size: cover;
-            background-position: center;
-            left: -10rem;
-            width: 47rem;
-            height: 27.5rem;
-            display: block;
-            bottom: -50px;
-            
-            text-align: center;
+            bottom: -190px !important;
+            background-color: transparent;
+            background: url('laptop.png') no-repeat !important;
+            background-size: cover !important;
+            background-position: center !important;
+            width: 47rem !important;
+            height: 27.5rem !important;
+            display: block !important;
+            text-align: center !important;
         }
         .banner-image #banner-gif{
-            width: 68%;
-            margin-top: 30px;
+            all: unset !important;
+            width: 68% !important;
+            height:auto !important;
+            margin-top: 30px !important;
+
         }
-        .banner-introduction{
-            background: rgba(17,24,34,.5);
-            min-height: 400px;
-            color: white;
-            padding: 20px;
-        }
-        .banner-introduction h2{
+        .banner-right h2{
             color: white !important;
-            text-align: center;
+            font-size: 32px !important;
+            margin-top: 50px;
+            font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif !important;
+        }
+        .banner-right h4{
+            font-size: 25px !important;
+            color:white !important;
+            font-weight: normal;
+            font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif !important;
         }
 
 
@@ -671,57 +684,65 @@ Click the help icon above to learn more.
 
 
         <div class="sydney-hero-area">
-            <div id="slideshow" class="header-slider" data-speed="5000">
-                <div id="banner">
+            <div id="banner">
                     <div class="banner-wrapper">
-                        <div class="banner-introduction">
-                            <h2>Base Enterprise Asset Management</h2> 
+                        <div class="banner-left">
+                             <div class="banner-image">
+                                <img src="app.gif" id="banner-gif" />
+                            </div>
                         </div>
-                        <div class="banner-image">
-                            <img src="app.gif" id="banner-gif" />
+                        <div class="banner-right">
+                            <h2>Base Enterprise Asset Management</h2> 
+                            <h4>Maximize return from all your assets - people, processes and equipment</h4>
                         </div>
                     </div>
                 </div>
+            <div id="slideshow" class="header-slider" data-speed="8000">
+                
                 <div class="slides-container">
-                    <div class="slide-item" style="background-image:url(http://baseeam.com/wp-content/uploads/2017/01/screen_1_resized.jpg);">
+                    <div class="slide-item" style="background-image:url(bg1.jpg);">
                         <div class="slide-inner">
-                            <div class="contain animated fadeInRightBig text-slider">
+                            <div class="contain  text-slider">
                                 <h2 class="maintitle">Base Enterprise Asset Management</h2>
                                 <p class="subtitle">Maximize return from all your assets - people, processes and equipment</p>
                             </div>
                             <a href="/request-demo" class="roll-button button-slider">Request a Demo</a> </div>
                     </div>
-                    <div class="slide-item" style="background-image:url(http://baseeam.com/wp-content/uploads/2017/01/screen_2_resized.jpg);">
+                    <div class="slide-item" style="background-image:url(bg1.jpg);">
                         <div class="slide-inner">
-                            <div class="contain animated fadeInRightBig text-slider">
+                            <div class="contain  text-slider">
                                 <h2 class="maintitle">Asset Management</h2>
                                 <p class="subtitle">Maximize asset availability and reliability, reducing asset downtime</p>
                             </div>
+                            
                             <a href="/request-demo" class="roll-button button-slider">Request a Demo</a>
                         </div>
                     </div>
                     <div class="slide-item" style="background-image:url(http://baseeam.com/wp-content/uploads/2017/01/screen_3.jpg);">
                         <div class="slide-inner">
-                            <div class="contain animated fadeInRightBig text-slider">
+                            <div class="contain animated fadeIn text-slider">
                                 <h2 class="maintitle">Work Management</h2>
                                 <p class="subtitle">Manage maintenance activities effectively and efficiently</p>
                             </div>
+                            
                             <a href="/request-demo" class="roll-button button-slider">Request a Demo</a> </div>
                     </div>
                     <div class="slide-item" style="background-image:url(http://baseeam.com/wp-content/uploads/2017/01/screen_4.jpg);">
                         <div class="slide-inner">
-                            <div class="contain animated fadeInRightBig text-slider">
+                            <div class="contain animated fadeIn text-slider">
                                 <h2 class="maintitle">Supply Chain Management</h2>
                                 <p class="subtitle">Streamlining inventory and procurement management functions</p>
                             </div>
+                            
                             <a href="/request-demo" class="roll-button button-slider">Request a Demo</a> </div>
                     </div>
                     <div class="slide-item" style="background-image:url(http://baseeam.com/wp-content/uploads/2017/01/screen_9_resized.jpg);">
                         <div class="slide-inner">
-                            <div class="contain animated fadeInRightBig text-slider">
+                            <div class="contain animated fadeIn text-slider">
                                 <h2 class="maintitle">Budget Management</h2>
                                 <p class="subtitle">Setup, Monitor, Control and Analyze Budget associated with maintenance costs</p>
                             </div>
+                            
                             <a href="/request-demo" class="roll-button button-slider">Request a Demo</a>
                         </div>
                     </div>
